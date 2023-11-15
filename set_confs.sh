@@ -1,21 +1,18 @@
 simlink () {
-  test "$(readlink "${1}")";
+    test "$(readlink "${1}")";
 }
-
-cd ~
-mkdir bk
-if ! simlink .zshrc; then 
-    mv .zshrc bk/.zshrc
-    ln -s ~/.mahiconfs/.zshrc ~/.zshrc
-else 
-    echo ".zshrc already simmed"
-fi
-
-cd ~
-mkdir bk
-if ! simlink .zshrc; then 
-    mv .gitconfig bk/.gitconfig
-    ln -s ~/.mahiconfs/.gitconfig ~/.gitconfig
-else
-    echo ".gitconfig already simmed"
-fi
+mkdir ~/bk
+declare -a arr=(
+    .zshrc
+    .gitconfig
+    )
+for i in "${arr[@]}"
+do
+    if ! simlink ~/$i; then 
+        mv ~/$i ~/bk/$i
+        ln -s ~/.mahiconfs/$i ~/$i
+        echo "made simlink $i"
+    else 
+        echo "$i already simmed"
+    fi
+done
