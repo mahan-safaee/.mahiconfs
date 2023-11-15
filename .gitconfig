@@ -1,0 +1,17 @@
+[core]
+	autocrlf = true
+	pager = less -F
+[user]
+	name = Mahan Safaee
+	email = mahisafa82@gmail.com
+[cola]
+	spellcheck = false
+	theme = flat-dark-grey
+	icontheme = dark
+[gui]
+	editor = gvim
+[alias]
+	dog = log --all --decorate --oneline --graph
+	uncommit = reset HEAD^
+[pull]
+	rebase = true
