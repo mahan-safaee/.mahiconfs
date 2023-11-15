@@ -114,6 +114,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias py=python3
 alias python=python3
+alias edge=microsoft-edge
+alias edges=microsoft-edge-stable
 alias __login__="source ~/.__login__"
 TMOUT=1
 TRAPALRM() {
