@@ -1,0 +1,47 @@
+{
+    "folders": [
+        {
+            "path": "vscoding"
+        },
+        {
+            "path": "vscoding/botdir"
+        },
+        {
+            "path": ".oh-my-zsh"
+        },
+        {
+            "path": ".mahiconfs"
+        }
+    ],
+    "settings": {
+        "workbench.tree.indent": 24,
+        "workbench.editor.closeOnFileDelete": true,
+        "workbench.tree.renderIndentGuides": "always",
+        "workbench.colorCustomizations": {
+            "tab.activeBorderTop": "#00bbff",
+            "editorInlayHint.background": "#00000099",
+            "editorInlayHint.foreground": "#8a8a8acc",
+            "editorInlayHint.parameterBackground": "#00000099",
+            "editorInlayHint.parameterForeground": "#8a8a8acc",
+            "editorInlayHint.typeBackground": "#00000099",
+            "editorInlayHint.typeForeground": "#8a8a8acc"
+        },
+        "workbench.editor.wrapTabs": true,
+        "explorer.compactFolders": false,
+        "files.associations": {
+            "*.html": "html",
+            "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+            "**/*.xlsx": "randomfractalsinc.vscode-data-preview",
+            "stdexcept": "cpp",
+            "iostream": "cpp",
+            "iosfwd": "cpp",
+            "fstream": "cpp",
+            "istream": "cpp"
+        },
+        "explorer.sortOrder": "type",
+        "git.ignoreLimitWarning": true,
+        "python.languageServer": "Pylance",
+        "files.autoSave": "onWindowChange",
+        "terminal.integrated.gpuAcceleration": "on"
+    }
+}

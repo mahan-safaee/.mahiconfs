@@ -5,6 +5,7 @@ mkdir ~/bk
 declare -a arr=(
     .zshrc
     .gitconfig
+    vb.code-workspace
     )
 for i in "${arr[@]}"
 do
