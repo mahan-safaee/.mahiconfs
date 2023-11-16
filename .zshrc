@@ -118,6 +118,7 @@ alias edge=microsoft-edge
 alias edges=microsoft-edge-stable
 alias __login__="source ~/.__login__"
 alias covs="code ~/vb.code-workspace"
+alias cl="clear"
 TMOUT=1
 TRAPALRM() {
     zle reset-prompt
