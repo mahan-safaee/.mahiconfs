@@ -11,6 +11,12 @@
         },
         {
             "path": ".mahiconfs"
+        },
+        {
+            "path": "hadis"
+        },
+        {
+            "path": "mahan"
         }
     ],
     "settings": {
