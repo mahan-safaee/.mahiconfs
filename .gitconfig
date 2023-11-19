@@ -5,7 +5,7 @@
 	name = mahisafa82
 	email = mahisafa82@gmail.com
 [alias]
-	dog = log --all --graph --decorate  --pretty=format:'%C(auto)%h%d %s %C(bold black)(%al: %ar)%Creset'
+	dog = log --all --graph --pretty=format:'%C(auto)%h%d %s %C(bold black)(%al: %ar)%Creset'
 	sog = dog
 	cola = cola
 	dag = dag
