@@ -10,8 +10,6 @@
 	cola = cola
 	dag = dag
 	uncommit = reset HEAD^
-[pager]
-	log = false
 [cola]
 	spellcheck = false
 	theme = flat-dark-grey
