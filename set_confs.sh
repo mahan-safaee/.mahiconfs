@@ -12,8 +12,8 @@ do
     if ! simlink ~/$i; then 
         mv ~/$i ~/bk/$i
         ln -s ~/.mahiconfs/$i ~/$i
-        echo "made simlink $i"
+        echo "made symlink $i"
     else 
-        echo "$i already simmed"
+        echo "$i already symmed"
     fi
 done
