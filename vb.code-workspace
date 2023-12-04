@@ -23,6 +23,8 @@
         "workbench.tree.indent": 24,
         "workbench.editor.closeOnFileDelete": true,
         "workbench.tree.renderIndentGuides": "always",
+        "python.analysis.inlayHints.variableTypes": true,
+        "python.analysis.inlayHints.functionReturnTypes": true,
         "workbench.colorCustomizations": {
             "tab.activeBorderTop": "#00bbff",
             "editorInlayHint.background": "#00000099",
@@ -48,6 +50,7 @@
         "git.ignoreLimitWarning": true,
         "python.languageServer": "Pylance",
         "files.autoSave": "onWindowChange",
-        "terminal.integrated.gpuAcceleration": "on"
+        "terminal.integrated.gpuAcceleration": "on",
+        ""python.linting.pylintArgs": ["--generate-members"],
     }
 }
