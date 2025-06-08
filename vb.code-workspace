@@ -4,6 +4,10 @@
             "path": "vscoding"
         },
         {
+            "path": "vscoding/rrprj",
+            "name": "ResinRoyaPrj"
+        },
+        {
             "path": "vscoding/botdir"
         },
         {
@@ -46,6 +50,7 @@
             "fstream": "cpp",
             "istream": "cpp"
         },
+        "editor.selectionClipboard": false,
         "explorer.sortOrder": "type",
         "git.ignoreLimitWarning": true,
         "python.languageServer": "Pylance",

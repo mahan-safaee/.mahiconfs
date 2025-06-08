@@ -6,6 +6,7 @@ declare -a arr=(
     .zshrc
     .gitconfig
     vb.code-workspace
+    0x0.sh
     )
 for i in "${arr[@]}"
 do

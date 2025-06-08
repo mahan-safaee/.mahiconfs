@@ -114,14 +114,34 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias py=python3
 alias python=python3
+
+alias suapi="sudo apt install"
+alias suapd="sudo apt update"
+alias suapg="sudo apt upgrade"
+alias suapr="sudo apt remove"
+alias suap="sudo apt"
+alias suapp="sudo apt purge"
+
+alias suapfi="sudo apt-fast install"
+alias suapfd="sudo apt-fast update"
+alias suapfg="sudo apt-fast upgrade"
+alias suapfr="sudo apt-fast remove"
+alias suapf="sudo apt-fast"
+alias suapp="sudo apt-fast purge"
+
 alias edge=microsoft-edge
 alias edges=microsoft-edge-stable
 alias __login__="source ~/.__login__"
 alias covs="code ~/vb.code-workspace"
 alias cl="clear"
+alias xop="xdg-open"
+alias 0x0="bash ~/0x0.sh"
 alias gdog="git dog"
 alias gdg="gdog"
 alias gdag="git dag"
+alias cython="cython3"
+alias dodo="killall gnome-shell"
+
 TMOUT=1
 TRAPALRM() {
     zle reset-prompt
@@ -138,5 +158,26 @@ function _pip_completion {
 compctl -K _pip_completion pip
 # pip zsh completion end
 
+udrepo() {
+    for source in "$@"; do
+        sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/${source}" \
+        -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
+    done
+}
+
+_ppa_lists() {
+    local files
+    files=(${(f)"$(ls /etc/apt/sources.list.d/*.list 2>/dev/null | xargs -n 1 basename)"})
+    _describe 'repository' files
+}
+
+compdef _ppa_lists udrepo
 
 eval $(thefuck --alias)
+MAHICONFS=$(dirname $(readlink ~/.zshrc))
+export QT_STYLE_OVERRIDE=kvantum
+QT_STYLE_OVERRIDE=kvantum
+export QT_QPA_PLATFORMTHEME=kvantum
+QT_QPA_PLATFORMTHEME=kvantum
+export PATH="$HOME/.local/bin:$PATH"
+export PIP_REQUIRE_VIRTUALENV=true
