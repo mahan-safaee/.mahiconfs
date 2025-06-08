@@ -56,6 +56,6 @@
         "python.languageServer": "Pylance",
         "files.autoSave": "onWindowChange",
         "terminal.integrated.gpuAcceleration": "on",
-        ""python.linting.pylintArgs": ["--generate-members"],
+        "python.linting.pylintArgs": ["--generate-members"],
     }
 }
